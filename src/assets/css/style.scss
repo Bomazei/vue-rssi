@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.wrapper {
+    display: flex;
+    table, th, td {
+        border: 1px solid #888;
+    }
+    .table {
+        width: 30%;
+        border-collapse: collapse;
+        background: linear-gradient(#d5ecff, #5881da);
+        thead {
+            th {
+                padding: 10px;
+            }
+        }
+        tbody {
+            tr {
+                cursor: pointer;
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+            td {
+               padding: 3px;
+               text-align: center;
+            }
+        }
+    }
+    .chart {
+        width: 100%;
+    }
+}
